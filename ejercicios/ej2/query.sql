@@ -1,25 +1,26 @@
-SELECT Nombre, Precio
-FROM PRODUCTOS
-ORDER BY Nombre, Precio DESC; -- primero por nombre (prioritario), y luego por precio
+-- Se debe ejecutar cada consulta por separado, descomentado por legibilidad.
 
+SELECT Nombre, Precio
+FROM Productos
+ORDER BY Nombre, Precio DESC; -- Primero por nombre (prioritario), y luego por precio
 --Podemos hacerlo por la posicion de la columna tambien
 -- ...
 -- ORDER BY 2, 1 DESC; -- columna 2 = nombre, columna 1 = Precio
 
 -- Recuperar fechas donde tuvimos pedidos
 SELECT DISTINCT Fecha
-From Pedidos
+FROM Pedidos
 
 --Sentencia subordinada :
---  SELECT * FROM PRODUCTOS
---  WHERE Precio >
---  (SELECT Precio FROM Productos WHERE Nombre="Ensalada");
+SELECT * FROM PRODUCTOS
+WHERE Precio >
+(SELECT Precio FROM Productos WHERE Nombre="Ensalada");
 
 --Predicado Compuesto (comparacion + AND)
---  SELECT * FROM Productos
---  WHERE Precio > 5 AND Precio < 8
+SELECT * FROM Productos
+WHERE Precio > 5 AND Precio < 8
 
 -- Comparaciones en predicados (IN/NOT IN)
 SELECT * FROM Productos
 WHERE Nombre IN ('Perrito', 'Pizza'); -- o ... NOT IN ..
--- equivalente: WHERE Nombre = 'Perrito' OR Nombre = 'Pizza';
+-- equivalente a : WHERE Nombre = 'Perrito' OR Nombre = 'Pizza';

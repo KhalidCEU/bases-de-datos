@@ -1,7 +1,7 @@
 CREATE TABLE Students (
 	Id INTEGER UNIQUE NOT NULL PRIMARY KEY,
 	Name TEXT,
-	Score INTEGER, (o real)
+	Score INTEGER,
 	Photo BLOB,
 	University TEXT,
 	FOREIGN KEY (University) REFERENCES Universities

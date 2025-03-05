@@ -13,7 +13,7 @@ INSERT INTO Productos VALUES
 (4, 'Ensalada', 6.1),
 (5, 'Nuggets', 4.95);
 
-INSERT INTO PedidosProductos VALUES
+INSERT INTO "Pedidos-Productos" VALUES
 (1, 1, 1),
 (1, 2, 1),
 (2, 4, 1),

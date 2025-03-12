@@ -24,3 +24,14 @@ WHERE Precio > 5 AND Precio < 8
 SELECT * FROM Productos
 WHERE Nombre IN ('Perrito', 'Pizza'); -- o ... NOT IN ..
 -- equivalente a : WHERE Nombre = 'Perrito' OR Nombre = 'Pizza';
+
+-- Agrupamiento
+SELECT ProductoId, SUM(Cantidad) as CantidadTotal
+From PedidosProductos
+GROUP BY ProductoId
+--HAVING Cantidad > 1;
+
+-- Multiples Tablas
+SELECT *
+FROM PedidosProductos AS PP, Pedidos AS P
+WHERE P.Id = PP.PedidoID

@@ -4,7 +4,7 @@ FROM Empleados
 WHERE Salario = (SELECT MIN(Salario) FROM Empleados);
 
 -- 3.1.2 Id de los diferentes jefes de la empresa
-SELECT DISTINCT Id
+SELECT DISTINCT Jefe
 From Empleados
 WHERE Jefe IS NOT NULL;
 

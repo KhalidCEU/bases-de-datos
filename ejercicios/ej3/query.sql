@@ -19,7 +19,7 @@ UPDATE Empleados
 SET DepId = (SELECT DepId FROM Empleados Where Salario =
     (SELECT MIN (Salario) FROM Empleados));
 
--- Ejemplo UPDATE :  Si quiero cambiar el valor del jefe en una file especifica
+-- Ejemplo UPDATE :  Si quiero cambiar el valor del jefe (id) en una fila especifica
 UPDATE Empleados
 SET Jefe = 3
 WHERE Id = 4;

@@ -28,7 +28,7 @@ WHERE Id = 4;
 -- y ganen menos que el salario medio
 DELETE FROM empleados
 WHERE salario <= (SELECT AVG(salario) FROM Empleados)
-and (nombre like '%a%' or nombre like '%i');
+AND (nombre like '%a%' AND nombre like '%i');
 
 -- 3.1.6 ¿En cuantos lugares diferentes tenemos departamentos?
 SELECT COUNT(DISTINCT lugar)

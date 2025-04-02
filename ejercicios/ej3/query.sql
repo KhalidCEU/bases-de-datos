@@ -27,7 +27,7 @@ WHERE Id = 4;
 -- 3.1.5 Elimina todos los empleados que tengan una "a" y una "i" en algún lugar de su nombre
 -- y ganen menos que el salario medio
 DELETE FROM empleados
-WHERE salario <= (SELECT AVG(salario) FROM Empleados)
+WHERE salario < (SELECT AVG(salario) FROM Empleados)
 AND (nombre like '%a%' AND nombre like '%i');
 
 -- 3.1.6 ¿En cuantos lugares diferentes tenemos departamentos?
@@ -42,7 +42,7 @@ SELECT SUM(salario + bonus) as total
 FROM Empleados;
 
 -- 3.1.8 Indique el nombre de los trabajadores con un bonus mayor que la media
-SELECT *
+SELECT Nombre
 FROM Empleados
 WHERE Bonus > (SELECT AVG(Bonus) FROM Empleados);
 

@@ -6,6 +6,8 @@ Este espacio contiene los materiales personales, ejercicios y proyectos desarrol
 
 ### Indice
 
+> Nota: En la asignatura se usa [SQLite](https://www.sqlite.org/) como base de datos, lo que puede explicar que algunas instrucciones SQL no sean compatibles con cualquier otro DBMS SQL.
+
 **Ejercicios**
 
 - [Students & Universities](/ejercicios/ej1/)

@@ -7,6 +7,11 @@ Este espacio contiene los materiales personales, ejercicios y proyectos desarrol
 ### Indice
 
 **Ejercicios**
+
 - [Students & Universities](/ejercicios/ej1/)
+
 - [Pedidos & Productos](/ejercicios/ej2/)
+
 - [Empleados & Departamentos](/ejercicios/ej3/)
+
+- [Ejercicio Examen Parcial](/ejercicios/parcial/)

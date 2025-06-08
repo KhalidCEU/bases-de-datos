@@ -16,4 +16,6 @@ Este espacio contiene los materiales personales, ejercicios y proyectos desarrol
 
 - [Empleados & Departamentos](/ejercicios/ej3/)
 
+- [Vuelos & Reservas](/ejercicios/ej3.2/)
+
 - [Ejercicio Examen Parcial](/ejercicios/parcial/)
